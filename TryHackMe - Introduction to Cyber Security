@@ -1,4 +1,21 @@
 Introduction-to-Cyber-Security.md
 
-Room 1 - Offensive Security?
-Offensive Security involves thinking like an attacker in order to identify weaknesses before malicious actors can exploit them. The goal is to improve security by discovering vulnerabilities, software bugs, misconfigurations, and loopholes that could allow unauthorized access. 
+06/20/2026
+Offensive Security Intro
+Learned that offensive security involves thinking like an attacker to find vulnerabilities before real hackers do. 
+The goal is to identify weaknesses and improve security. Completed a lab using a simulated banking website to see how ethical hacking works in a safe environment. 
+
+Key Terms: Vulnerability, Exploit, Ethical Hacker, Penetration Testing
+
+Defensive Security Intro
+Learned that defensive security focuses on preventing attacks, detecting threats, and responding to incidents. 
+Defensive security teams monitor systems, investigate suspicious activity, and help protect organizations from cyber threats.
+
+Topics Covered: Security Operations Center(SOC), Threat Intelligence, Digital Forensics and Incident Response (DFIR)
+Malware Analysis and SIEM Logs
+
+Things I Leanred: SOC teams monitor networks for threats. Threat intelligence helps organizations understand attackers. 
+Digital forensics investigates evidence after an attack. Incident response follows a process to contain and recover from incidents. 
+Malware analysis helps identify how malicious software works. 
+
+Reflection: This room introduced the differene between offensive and defensive security. Offensive security focuses on finding weaknesses, while defensive security focuses on protecting systems and responding to threats.
