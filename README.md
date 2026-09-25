@@ -21,3 +21,7 @@ I'm transitioning into security through WGU, working toward my degree and CompTI
 
 ## Certifications
 A+ (passed) · Network+ (in progress) · Security+ · Project+ · Linux+ · Data+ · CySA+ · Pentest+ · OSCP (long-term goal)
+
+## Related
+- [Coding Journey 2026](https://github.com/NrdyGuy15/coding-journey-2026) — scripting and security tools
+- [Cloud Journey 2026](https://github.com/NrdyGuy15/cloud-journey-2026) — weekly AWS study for offensive security
