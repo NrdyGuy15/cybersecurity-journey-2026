@@ -3,16 +3,16 @@
 **Goal:** Bring Windows 10 onto the lab network, test connectivity all directions, and prove how a host firewall affects reachability.
 
 ## Setup
-- Kali `10.0.2.3`, Metasploitable2 `10.0.2.5`, Windows 10 `10.0.2.4` — all on the VirtualBox NAT Network (`10.0.2.0/24`).
+- Kali 10.0.2.3, Metasploitable2 10.0.2.5, Windows 10 10.0.2.4 all on the VirtualBox NAT Network (10.0.2.0/24).
 
 ## Cold re-run
 - Reconfirmed Kali <-> Meta connectivity from memory before adding the new box.
 
 ## What I did
-1. Confirmed Windows 10 was on the NAT Network; found its IP with `ipconfig` (Windows) -> `10.0.2.4`.
+1. Confirmed Windows 10 was on the NAT Network; found its IP with `ipconfig` (Windows) -> 10.0.2.4.
 2. Pinged Win10 from Kali -> **100% packet loss**.
-3. Reasoned it was NOT a network problem (valid IP, same subnet as two reachable hosts) — suspected the **Windows host firewall**.
-4. Proved it by direction: pinged Kali FROM Win10 -> **0% loss (success)**. Win10 can ping out, but won't answer pings in — classic host-firewall asymmetry.
+3. Reasoned it was NOT a network problem (valid IP, same subnet as two reachable hosts) suspected the **Windows host firewall**.
+4. Proved it by direction: pinged Kali FROM Win10 -> **0% loss (success)**. Win10 can ping out, but won't answer pings in, classic host-firewall asymmetry.
 5. Ran the controlled experiment: turned Windows Firewall **off** -> Kali -> Win10 now **0% loss**. Turned it back **on** -> **100% loss** again.
 6. Left the firewall **ON** (its safe, default state).
 
@@ -26,9 +26,9 @@
 
 ## What I learned
 - **"No ping" does not mean "host down."** A host firewall can silently drop incoming ICMP while the host is perfectly alive — so failed pings can be filtering, not absence.
-- Windows Firewall blocks inbound ping by default but allows replies to pings it initiated — that's why Win10 -> Kali worked while Kali -> Win10 didn't.
+- Windows Firewall blocks inbound ping by default but allows replies to pings it initiated, that's why Win10 -> Kali worked while Kali -> Win10 didn't.
 - Changing one variable (firewall on/off) and watching the result flip is how you *prove* a cause instead of guessing.
 - Disabling a firewall is a **lab-only convenience**, never a production practice — it's a real defense. Turned it back on when done.
 
 ## Still to do
-- Explore how attackers deal with hosts that block ping (e.g. nmap's `-Pn` to skip host discovery) — preview of scanning/enumeration.
+- Explore how attackers deal with hosts that block ping (e.g. nmap's `-Pn` to skip host discovery), preview of scanning/enumeration.
