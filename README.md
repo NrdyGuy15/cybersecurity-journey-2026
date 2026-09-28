@@ -18,6 +18,7 @@ I'm transitioning into security through WGU, working toward my degree and CompTI
 |---|-----|------------------|
 | 01 | VM Network Connectivity | Putting VMs on the same network and verifying they can actually communicate |
 | 02 | Reverse Ping & Cold Re-Run | Proving bidirectional connectivity, and re-running Lab 01 from memory |
+| 03 | Windows 10 Connectivity & Host Firewall | Three-way network test; proved a host firewall blocks inbound ping |
 
 ## Certifications
 A+ (passed) · Network+ (in progress) · Security+ · Project+ · Linux+ · Data+ · CySA+ · Pentest+ · OSCP (long-term goal)
